@@ -10,7 +10,7 @@ function App() {
     <AppLayout>
       <div className="w-full h-screen relative">
         <TechnologyBackground />
-        <div className="z-50  absolute top-0 left-0 w-full h-full flex items-center justify-center gap-8">
+        <div className="z-40  absolute top-0 left-0 w-full h-full flex items-center justify-center gap-8">
           <IntroductionBox />
           <ProfileImage
             imageSource={zdjecie}

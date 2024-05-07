@@ -1,4 +1,5 @@
 import { FC, ReactNode } from "react";
+import ContactSidebar from "../components/ContactSidebar/ContactSidebar";
 
 interface AppLayoutProps {
   children: ReactNode;
@@ -7,7 +8,7 @@ interface AppLayoutProps {
 const AppLayout: FC<AppLayoutProps> = ({ children }) => {
   return (
     <div className="relative w-full min-h-screen">
-      <p className="absolute top-0 left-0 text-red-500 text-xl z-50">xdssss</p>
+      <ContactSidebar />
       {children}
     </div>
   );
