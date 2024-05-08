@@ -5,7 +5,7 @@ import ContactLink from "./ContactLink";
 
 const ContactSidebar = () => {
   return (
-    <div className="absolute bottom-0 left-10 z-50 flex h-screen flex-col gap-5 items-center bg-dark/[.8] px-2">
+    <div className="fixed bottom-0 left-10 z-50 flex h-screen flex-col gap-5 items-center bg-dark/[.8] px-2">
       <div className="h-full w-[1px] bg-light "></div>
       <ul className="flex flex-col gap-4 text-4xl text-light z-60 ">
         <ContactLink
