@@ -29,13 +29,12 @@ import {
   BiLogoMongodb,
   BiLogoTypescript,
 } from "react-icons/bi";
+import SectionTitle from "../ui/SectionTitle";
 
 const TechnologiesSection = () => {
   return (
-    <div className="flex flex-col  justify-center h-full w-full px-48 ">
-      <h2 className="text-light text-5xl font-bold mb-24">
-        Technologies I use
-      </h2>
+    <>
+      <SectionTitle title="Technologies I use" />
       <div className="flex gap-10">
         <TechnologiesBox
           title="Frontend"
@@ -99,6 +98,11 @@ const TechnologiesSection = () => {
               link: "https://tailwindcss.com/",
             },
             {
+              icon: <SiSass className="text-[#CD669A]" />,
+              name: "Sass",
+              link: "https://sass-lang.com/",
+            },
+            {
               icon: <FaHtml5 className="text-[#E34F26]" />,
               name: "HTML",
               link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -107,11 +111,6 @@ const TechnologiesSection = () => {
               icon: <FaCss3Alt className="text-[#1572B6]" />,
               name: "CSS",
               link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-            },
-            {
-              icon: <SiSass className="text-[#CD669A]" />,
-              name: "Sass",
-              link: "https://sass-lang.com/",
             },
           ]}
         />
@@ -179,7 +178,7 @@ const TechnologiesSection = () => {
           ]}
         />
       </div>
-    </div>
+    </>
   );
 };
 
