@@ -12,11 +12,19 @@ const ProjectCardLinks: FC<ProjectCardLinksProps> = ({
 }) => {
   return (
     <div className="flex gap-4 text-2xl">
-      <a href={githubLink} target="blank">
+      <a
+        href={githubLink}
+        target="blank"
+        className="hover:scale-150 transition-all hover:text-secondary"
+      >
         <FaGithub />
       </a>
       {liveLink && (
-        <a href={liveLink} target="blank">
+        <a
+          href={liveLink}
+          target="blank"
+          className="hover:scale-150 transition-all hover:text-primary"
+        >
           <FaExternalLinkAlt />
         </a>
       )}

@@ -7,11 +7,11 @@ import {
   FaCss3Alt,
   FaGithub,
   FaGitAlt,
-  FaAngular,
+  // FaAngular,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
-  SiNestjs,
+  // SiNestjs,
   SiExpress,
   SiRedux,
   SiAdobexd,
@@ -86,11 +86,11 @@ const TechnologiesSection = () => {
               link: "https://jestjs.io/",
             },
 
-            {
-              icon: <FaAngular className="text-[#DD0031]" />,
-              name: "Angular",
-              link: "https://angular.io/",
-            },
+            // {
+            //   icon: <FaAngular className="text-[#DD0031]" />,
+            //   name: "Angular",
+            //   link: "https://angular.io/",
+            // },
 
             {
               icon: <RiTailwindCssFill className="text-[#06B6D4]" />,
@@ -129,11 +129,11 @@ const TechnologiesSection = () => {
               name: "Express",
               link: "https://expressjs.com/",
             },
-            {
-              icon: <SiNestjs className="text-[#E0234E]" />,
-              name: "NestJS",
-              link: "https://nestjs.com/",
-            },
+            // {
+            //   icon: <SiNestjs className="text-[#E0234E]" />,
+            //   name: "NestJS",
+            //   link: "https://nestjs.com/",
+            // },
             {
               icon: <BiLogoMongodb className="text-[#47A248]" />,
               name: "MongoDB",

@@ -5,12 +5,14 @@ import HomeSection from "./sections/HomeSection";
 import SectionLayout from "./sections/SectionLayout";
 import TechnologiesSection from "./sections/TechnologiesSection";
 import ProjectsSection from "./sections/ProjectsSection";
+import AboutSection from "./sections/AboutSection";
 
 function App() {
   const homeRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
   const technologiesRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <AppLayout>
@@ -18,6 +20,9 @@ function App() {
         {" "}
         <HomeSection />
       </div>
+      <SectionLayout sectionRef={aboutRef}>
+        <AboutSection />
+      </SectionLayout>
       <SectionLayout sectionRef={technologiesRef}>
         <TechnologiesSection />
       </SectionLayout>
@@ -32,6 +37,7 @@ function App() {
           { name: "Projects", elementRef: projectsRef },
         ]}
       />
+      <div ref={contactRef} className="h-screen w-full relative"></div>
     </AppLayout>
   );
 }
