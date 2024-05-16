@@ -23,15 +23,15 @@ const ProjectCardGallery: FC<ProjectCardGalleryProps> = ({ photos }) => {
       </div>
       <button
         onClick={previousImage}
-        className="absolute  top-1/2  left-[-25px] bg-light text-dark p-2 rounded-xl hover:bg-primary transition-all group"
+        className="absolute  top-1/2  left-[-15px] md:left-[-25px] bg-light text-dark p-2 rounded-xl hover:bg-primary transition-all group"
       >
-        <IoIosArrowBack className="text-3xl group-hover:scale-125 transition-all" />
+        <IoIosArrowBack className="text-2xl sm:text-3xl group-hover:scale-125 transition-all" />
       </button>
       <button
         onClick={nextImage}
-        className="absolute  top-1/2  right-[-25px] bg-light text-dark p-2 rounded-xl hover:bg-primary transition-all group"
+        className="absolute  top-1/2  right-[-15px] md:right-[-25px] bg-light text-dark p-2 rounded-xl hover:bg-primary transition-all group"
       >
-        <IoIosArrowForward className="text-3xl group-hover:scale-125 transition-all" />
+        <IoIosArrowForward className="text-2xl sm:text-3xl group-hover:scale-125 transition-all" />
       </button>
     </div>
   );

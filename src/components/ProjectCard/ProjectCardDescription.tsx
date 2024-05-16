@@ -7,7 +7,7 @@ interface ProjectCardDescriptionProps {
 const ProjectCardDescription: FC<ProjectCardDescriptionProps> = ({
   description,
 }) => {
-  return <p className="text-justify text-lg">{description}</p>;
+  return <p className="text-justify md:text-lg">{description}</p>;
 };
 
 export default ProjectCardDescription;

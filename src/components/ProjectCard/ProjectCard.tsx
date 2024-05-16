@@ -27,8 +27,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
       <div className="border-b-4 border-primary rounded-t-xl">
         <ProjectCardGallery photos={images} />
       </div>
-      <div className="p-6">
-        <div className="flex justify-between items-center text mb-12">
+      <div className="p-4 sm:p-6 md:p-8">
+        <div className="flex justify-between items-center text mb-6 md:mb-12">
           <ProjectCardTitle title={title} />
           <ProjectCardLinks githubLink={githubLink} liveLink={liveLink} />
         </div>
