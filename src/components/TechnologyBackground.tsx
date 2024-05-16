@@ -51,7 +51,7 @@ const TechnologyBackground = () => {
   return (
     <div
       ref={boxRef}
-      className="w-full h-full bg-dark relative"
+      className="w-full h-full min-h-screen bg-dark relative"
       id={`${ballsKey}`}
     >
       {boxRef && renderBalls()}

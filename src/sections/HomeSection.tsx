@@ -7,7 +7,7 @@ const HomeSection = () => {
   return (
     <>
       <TechnologyBackground />
-      <div className="z-40  absolute top-0 left-0 w-full h-full flex items-center justify-center gap-8">
+      <div className="z-40  absolute top-0 left-0 w-full h-full min-h-screen flex flex-col xl:flex-row items-center justify-center gap-8 ">
         <IntroductionBox />
         <ProfileImage
           imageSource={zdjecie}
