@@ -12,14 +12,14 @@ const AboutSection = () => {
         <DetailCard
           content={<PiStudentFill className="text-6xl" />}
           description="I'm graduated with a degree in Computer Science, specializing in Software Engineering from the Lublin University of Technology."
-          bgColor="primary"
+          bgColor="bg-primary"
           textColor="dark"
         />
 
         <DetailCard
           content={<FaCode className="text-6xl" />}
           description="I'm an enthusiastic learner exploring the realms of frontend and backend development in the captivating world of JavaScript."
-          bgColor="secondary"
+          bgColor="bg-secondary"
           textColor="light"
           alignSelf="self-end"
         />
@@ -33,7 +33,7 @@ const AboutSection = () => {
             </div>
           }
           description="When not coding, I stay active at the gym, unwind with a good book, and enjoy hitting the open road on my motorcycle during the summer months."
-          bgColor="light"
+          bgColor="bg-light"
           textColor="dark"
         />
       </div>

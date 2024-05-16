@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
 import ContactLinks from "../components/ContactLinks";
+import Footer from "../components/Footer";
 
 const ContactSection = () => {
   return (
@@ -39,6 +40,7 @@ const ContactSection = () => {
           </div>
         </div>
         <ContactForm />
+        <Footer />
       </div>
     </>
   );
