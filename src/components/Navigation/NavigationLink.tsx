@@ -23,6 +23,7 @@ const NavigationLink: FC<NavigationLinkProps> = ({
       <button
         onClick={navigateToElement}
         className={`hover:text-secondary transition-all ${color ? color : ""}`}
+        aria-label={`Navigate to section: ${name}`}
       >
         {name}
       </button>

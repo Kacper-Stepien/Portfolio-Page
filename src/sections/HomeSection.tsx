@@ -1,7 +1,7 @@
 import IntroductionBox from "../components/IntroductionBox";
 import ProfileImage from "../components/ProfileImage";
 import TechnologyBackground from "../components/TechnologyBackground";
-import zdjecie from "../assets/zdjecie.png";
+import zdjecie from "../assets/zdjecie.webp";
 
 const HomeSection = () => {
   return (
@@ -11,7 +11,7 @@ const HomeSection = () => {
         <IntroductionBox />
         <ProfileImage
           imageSource={zdjecie}
-          altText="Zdjęcie profilowe Kacper Stępień"
+          altText="Profile picture Kacper Stępień"
         />
       </div>
     </>

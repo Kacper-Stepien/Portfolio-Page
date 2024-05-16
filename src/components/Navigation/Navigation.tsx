@@ -29,6 +29,7 @@ const Navigation: FC<NavigationProps> = ({ links }) => {
       <button
         onClick={() => setIsOpen((prev: boolean) => !prev)}
         className="md:hidden z-50 fixed top-4 left-4"
+        aria-label="Toggle navigation menu"
       >
         {isOpen ? (
           <IoClose className="text-white text-5xl bg-dark/[.9] rouned-xl" />
