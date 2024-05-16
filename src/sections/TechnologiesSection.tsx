@@ -35,7 +35,7 @@ const TechnologiesSection = () => {
   return (
     <>
       <SectionTitle title="Technologies I use" />
-      <div className="flex gap-10">
+      <div className="flex flex-col xl:flex-row gap-10">
         <TechnologiesBox
           title="Frontend"
           color="primary"
