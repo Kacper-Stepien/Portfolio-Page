@@ -17,10 +17,10 @@ const TechnologiesBox: FC<TechnologiesBoxProps> = ({
 
   return (
     <div
-      className={`border-4 border-${color} flex text-4xl flex-col gap-8 p-8 rounded-xl`}
+      className={`border-4 border-${color} flex text-4xl flex-col gap-8 p-8 rounded-xl group hover:scale-110 transition-all hover:shadow-xl`}
     >
       <h3 className={`text-${color}`}>{title}</h3>
-      <div className="flex flex-wrap gap-8">
+      <div className="flex flex-wrap gap-8 justify-center">
         {technologies.map((technology, index) => (
           <div
             key={index}
