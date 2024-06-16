@@ -12,7 +12,7 @@ import {
 import { IoLogoJavascript } from "react-icons/io5";
 import {
   SiTypescript,
-  // SiNestjs,
+  SiNestjs,
   SiExpress,
   SiRedux,
   SiAdobexd,
@@ -72,10 +72,10 @@ const technologies = [
     icon: <SiTypescript className="text-3xl text-dark" />,
     color: Colors.Light,
   },
-  // {
-  //   icon: <SiNestjs className="text-3xl text-dark" />,
-  //   color: Colors.Primary,
-  // },
+  {
+    icon: <SiNestjs className="text-3xl text-dark" />,
+    color: Colors.Primary,
+  },
   {
     icon: <SiExpress className="text-3xl text-dark" />,
     color: Colors.Light,

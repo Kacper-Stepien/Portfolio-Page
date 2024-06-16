@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import {
-  // SiNestjs,
+  SiNestjs,
   SiExpress,
   SiRedux,
   SiAdobexd,
@@ -129,11 +129,11 @@ const TechnologiesSection = () => {
               name: "Express",
               link: "https://expressjs.com/",
             },
-            // {
-            //   icon: <SiNestjs className="text-[#E0234E]" />,
-            //   name: "NestJS",
-            //   link: "https://nestjs.com/",
-            // },
+            {
+              icon: <SiNestjs className="text-[#E0234E]" />,
+              name: "NestJS",
+              link: "https://nestjs.com/",
+            },
             {
               icon: <BiLogoMongodb className="text-[#47A248]" />,
               name: "MongoDB",
