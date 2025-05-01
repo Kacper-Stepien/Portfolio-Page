@@ -19,9 +19,9 @@ import {
   SiReactrouter,
   SiSass,
   SiJest,
-  SiVisualstudiocode,
   SiReacthookform,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
   BiLogoPostgresql,
@@ -171,7 +171,7 @@ const TechnologiesSection = () => {
         />
         <TechnologyCard
           name="VS Code"
-          icon={<SiVisualstudiocode className="text-[#007ACC]" />}
+          icon={<VscVscode className="text-[#007ACC]" />}
           link="https://code.visualstudio.com/"
           glowColor="#007ACC"
         />

@@ -20,10 +20,10 @@ import {
   SiVite,
   SiReactrouter,
   SiJest,
-  SiVisualstudiocode,
   SiReacthookform,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { VscVscode } from "react-icons/vsc";
 import { BiLogoPostgresql, BiLogoMongodb } from "react-icons/bi";
 import Colors from "../types/Colors.enum";
 
@@ -117,7 +117,7 @@ const technologies = [
     color: Colors.Light,
   },
   {
-    icon: <SiVisualstudiocode className="text-3xl text-dark" />,
+    icon: <VscVscode className="text-3xl text-dark" />,
     color: Colors.Secondary,
   },
   {
