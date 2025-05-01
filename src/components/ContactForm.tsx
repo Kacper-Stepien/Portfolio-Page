@@ -54,7 +54,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col gap-8 text-light md:min-w-96 w-full"
+      className="flex flex-col gap-6 text-light w-full max-w-md"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div>
@@ -116,16 +116,20 @@ const ContactForm = () => {
         )}
       </div>
       <button
-        className={`btn border-4 text-light border-secondary py-2 rounded-md  transition-all ${
-          !isValid || isSubmitting ? "cursor-not-allowed" : "hover:bg-secondary"
+        className={`w-full py-3 rounded-lg bg-gradient-to-r from-primary to-secondary text-dark font-semibold transition-transform ${
+          !isValid || isSubmitting
+            ? "opacity-50 cursor-not-allowed"
+            : "hover:scale-105"
         }`}
         type="submit"
         disabled={!isValid || isSubmitting}
       >
-        {isSubmitting ? "Submitting..." : isSubmitted ? "Submitted" : "Submit"}
+        {isSubmitting ? "Submitting..." : isSubmitted ? "Submitted!" : "Submit"}
       </button>
       {globalError && (
-        <InputErrorMessage>Something went wrong.</InputErrorMessage>
+        <InputErrorMessage>
+          Something went wrong. Please try again.
+        </InputErrorMessage>
       )}
     </form>
   );

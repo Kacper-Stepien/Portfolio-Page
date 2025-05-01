@@ -23,7 +23,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
   technologies,
 }) => {
   return (
-    <div className="border-4 border-primary rounded-xl text-light">
+    <div className="border-4 border-primary rounded-xl text-light ">
       <div className="border-b-4 border-primary rounded-t-xl">
         <ProjectCardGallery photos={images} />
       </div>

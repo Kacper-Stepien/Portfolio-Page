@@ -1,5 +1,4 @@
 import { RegisterOptions, UseFormRegister } from "react-hook-form";
-
 import { FC } from "react";
 
 interface InputProps {
@@ -22,14 +21,16 @@ const Input: FC<InputProps> = ({
   rules,
   textarea = false,
 }) => {
+  const baseClasses =
+    "w-full p-3 rounded-lg border bg-dark text-lg transition focus:outline-none focus:ring-2 focus:ring-secondary hover:scale-[1.02]";
+  const errorClasses = isError ? "border-red-500" : "border-primary";
+
   if (textarea) {
     return (
       <textarea
         placeholder={placeholder}
         {...register(name, rules)}
-        className={`w-full h-40 resize-none p-2 rounded-md border-4 border-primary text-lg bg-dark focus:border-4 focus:border-secondary outline-none  ${
-          isError && "border-red-600 "
-        } `}
+        className={`${baseClasses} ${errorClasses} resize-none min-h-[10rem]`}
       />
     );
   }
@@ -39,9 +40,7 @@ const Input: FC<InputProps> = ({
       type={type}
       placeholder={placeholder}
       {...register(name, rules)}
-      className={`w-full p-2 rounded-md border-4 border-primary text-lg bg-dark focus:border-4 focus:border-secondary outline-none  ${
-        isError && "border-red-600 "
-      } `}
+      className={`${baseClasses} ${errorClasses}`}
     />
   );
 };

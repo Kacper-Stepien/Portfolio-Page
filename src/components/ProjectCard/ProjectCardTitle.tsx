@@ -6,7 +6,9 @@ interface ProjectCardTitleProps {
 
 const ProjectCardTitle: FC<ProjectCardTitleProps> = ({ title }) => {
   return (
-    <h3 className="text-primary text-2xl md:text-3xl font-bold ">{title}</h3>
+    <h3 className="text-primary text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      {title}
+    </h3>
   );
 };
 
