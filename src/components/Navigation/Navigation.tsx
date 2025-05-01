@@ -14,8 +14,8 @@ const Navigation: FC<NavigationProps> = ({ links }) => {
 
   return (
     <>
-      <nav className="hidden md:flex justify-between items-center py-4 fixed text-light z-50 top-0 right-0 p-6 text-2xl bg-dark/[.8]">
-        <ul className="flex gap-12">
+      <nav className="hidden md:flex justify-between items-center py-4 fixed text-light z-40 top-0 right-0 p-6 text-2xl bg-dark/[.8] w-full">
+        <ul className="flex gap-12 w-full justify-end">
           {links.map((link) => (
             <NavigationLink
               key={link.name}
