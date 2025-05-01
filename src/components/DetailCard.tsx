@@ -1,26 +1,35 @@
 import { FC, ReactNode } from "react";
 
 interface DetailCardProps {
-  content: ReactNode;
+  icon: ReactNode;
   description: string;
-  bgColor: string;
-  textColor: string;
-  alignSelf?: string;
+  gradient: string;
+  iconColor: string;
+  fullBadge?: boolean;
 }
 
 const DetailCard: FC<DetailCardProps> = ({
-  content,
+  icon,
   description,
-  bgColor,
-  textColor,
-  alignSelf,
+  gradient,
+  iconColor,
+  fullBadge = true,
 }) => {
   return (
     <div
-      className={`flex-col lg:flex-row flex items-center gap-8 ${bgColor} md:px-12  px-4 sm:px-6  py-6 md:py-8 rounded-xl md:max-w-[70%] text-${textColor} ${alignSelf} hover:scale-110 transition-all`}
+      className={`flex flex-col items-center text-center p-8 rounded-xl bg-gradient-to-br ${gradient} shadow-lg hover:scale-105 transition-transform min-h-[260px]`}
     >
-      <div>{content}</div>
-      <p className="md:text-xl text-justify">{description}</p>
+      {fullBadge ? (
+        <div
+          className={`flex items-center justify-center w-20 h-20 text-4xl bg-white ${iconColor} rounded-full shadow mb-4`}
+        >
+          {icon}
+        </div>
+      ) : (
+        <div className={`flex gap-3 text-4xl mb-4 ${iconColor}`}>{icon}</div>
+      )}
+
+      <p className="text-base md:text-lg text-gray-800">{description}</p>
     </div>
   );
 };

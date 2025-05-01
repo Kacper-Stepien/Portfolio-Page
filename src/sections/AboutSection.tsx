@@ -1,5 +1,5 @@
 import { PiStudentFill } from "react-icons/pi";
-import { FaCode, FaDumbbell, FaBookOpen } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
 import { FaMotorcycle } from "react-icons/fa";
 import SectionTitle from "../ui/SectionTitle";
 import DetailCard from "../components/DetailCard";
@@ -8,34 +8,29 @@ const AboutSection = () => {
   return (
     <>
       <SectionTitle title="About me" />
-      <div className="flex flex-col gap-16 items-start">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         <DetailCard
-          content={<PiStudentFill className="text-6xl" />}
-          description="I'm graduated with a degree in Computer Science, specializing in Software Engineering from the Lublin University of Technology."
-          bgColor="bg-primary"
-          textColor="dark"
+          icon={<PiStudentFill />}
+          description="I graduated with a degree in Computer Science, specializing in Software Engineering from the Lublin University of Technology."
+          gradient="from-yellow-300 to-yellow-400"
+          iconColor="text-yellow-700"
         />
 
         <DetailCard
-          content={<FaCode className="text-6xl" />}
+          icon={<FaCode />}
           description="I'm an enthusiastic learner exploring the realms of frontend and backend development in the captivating world of JavaScript."
-          bgColor="bg-secondary"
-          textColor="light"
-          alignSelf="self-end"
+          gradient="from-cyan-400 to-cyan-500"
+          iconColor="text-cyan-700"
         />
 
-        <DetailCard
-          content={
-            <div className="flex gap-4">
-              <FaDumbbell className="text-6xl" />
-              <FaBookOpen className="text-6xl" />
-              <FaMotorcycle className="text-6xl" />
-            </div>
-          }
-          description="When not coding, I stay active at the gym, unwind with a good book, and enjoy hitting the open road on my motorcycle during the summer months."
-          bgColor="bg-light"
-          textColor="dark"
-        />
+        <div className="md:col-span-2 lg:col-span-1 md:justify-self-center">
+          <DetailCard
+            icon={<FaMotorcycle />}
+            description="When not coding, I stay active at the gym, unwind with a good book, and enjoy hitting the open road on my motorcycle during the summer months."
+            gradient="from-gray-200 to-gray-300"
+            iconColor="text-gray-700"
+          />
+        </div>
       </div>
     </>
   );

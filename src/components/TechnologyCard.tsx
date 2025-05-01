@@ -31,7 +31,7 @@ const TechnologyCard: FC<TechnologyCardProps> = ({
         {icon}
       </div>
 
-      <div className="absolute top-full  bg-gray-700 text-white text-xs sm:text-sm px-2 py-1 rounded-md shadow opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 pointer-events-none">
+      <div className="absolute top-full  bg-gray-700 text-white text-xs sm:text-sm px-2 py-1 rounded-md shadow opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 pointer-events-none text-center">
         {name}
       </div>
     </div>
